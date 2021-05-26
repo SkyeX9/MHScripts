@@ -1,17 +1,3 @@
-local FacBase 
-		local TycooList = game.Workspace.Tycoons:GetChildren() 
-		for _,v in next, TycooList do
-			if v.Owner.Value == game.Players.LocalPlayer.Name then
-				FacBase = v.Base
-			end
-		end
-		
-		local Tycoon = client.PlayerTycoon.Value 
-		local PlaceRemote = game.ReplicatedStorage.PlaceItem 
-		local BuyItem = game.ReplicatedStorage.BuyItem
-		local PlrTycoon = workspace.Tycoons[tostring(Tycoon)]
-		local PlrTycoonChildren = PlrTycoon:GetChildren()
-
 		function PlaceItem(Item,Position,Base)
 			game.ReplicatedStorage.PlaceItem:InvokeServer(Item, Position, Base) 
 		end
