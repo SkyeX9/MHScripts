@@ -6,7 +6,6 @@ TweenService = game:GetService("TweenService")
 MoneyLib = require(game:GetService("ReplicatedStorage").MoneyLib)
 
 local tweentime = 0.5
-
 wikiscreenGui = Instance.new("ScreenGui")
 wikiscreenGui.IgnoreGuiInset = true
 wikiscreenGui.Parent = game:GetService("CoreGui")
@@ -89,6 +88,16 @@ backwiki.Position = UDim2.new(0.027,0,0.033,0)
 backwiki.Size = UDim2.new(0,60,0,26)
 backwiki.Font = Enum.Font.Jura
 
+backwiki.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(backwiki, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+backwiki.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(backwiki, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
+
 backwikicorn = Instance.new("UICorner")
 backwikicorn.Parent = backwiki
 
@@ -105,6 +114,16 @@ shinywiki.Position = UDim2.new(0.815,0,0.033,0)
 shinywiki.Size = UDim2.new(0,60,0,26)
 shinywiki.Font = Enum.Font.Jura
 shinywiki.Visible = false
+
+shinywiki.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(shinywiki, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+shinywiki.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(shinywiki, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
 
 shinywikicorn = Instance.new("UICorner")
 shinywikicorn.Parent = shinywiki
@@ -399,6 +418,16 @@ backwikiMine.Position = UDim2.new(0.027,0,0.033,0)
 backwikiMine.Size = UDim2.new(0,60,0,26)
 backwikiMine.Font = Enum.Font.Jura
 
+backwikiMine.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(backwikiMine, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+backwikiMine.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(backwikiMine, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
+
 backwikicornMine = Instance.new("UICorner")
 backwikicornMine.Parent = backwikiMine
 
@@ -414,6 +443,16 @@ shinywikiMine.AutoButtonColor = false
 shinywikiMine.Position = UDim2.new(0.815,0,0.033,0)
 shinywikiMine.Size = UDim2.new(0,60,0,26)
 shinywikiMine.Font = Enum.Font.Jura
+
+shinywikiMine.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(shinywikiMine, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+shinywikiMine.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(shinywikiMine, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
 
 shinywikicornMine = Instance.new("UICorner")
 shinywikicornMine.Parent = shinywikiMine
@@ -793,6 +832,16 @@ backwikiFurn.Position = UDim2.new(0.027,0,0.033,0)
 backwikiFurn.Size = UDim2.new(0,60,0,26)
 backwikiFurn.Font = Enum.Font.Jura
 
+backwikiFurn.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(backwikiFurn, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+backwikiFurn.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(backwikiFurn, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
+
 backwikicornFurn = Instance.new("UICorner")
 backwikicornFurn.Parent = backwikiFurn
 
@@ -808,6 +857,16 @@ shinywikiFurn.AutoButtonColor = false
 shinywikiFurn.Position = UDim2.new(0.815,0,0.033,0)
 shinywikiFurn.Size = UDim2.new(0,60,0,26)
 shinywikiFurn.Font = Enum.Font.Jura
+
+shinywikiFurn.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(shinywikiFurn, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+shinywikiFurn.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(shinywikiFurn, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
 
 shinywikicornFurn = Instance.new("UICorner")
 shinywikicornFurn.Parent = shinywikiFurn
@@ -1123,6 +1182,16 @@ backwikisearch.Text = "Back"
 backwikisearch.TextColor3 = stringtocolor(SettingsT.TextColor)
 backwikisearch.TextSize = 14.000
 
+backwikisearch.MouseEnter:Connect(function()
+    local tweentrans = TweenService:Create(backwikisearch, TweenInfo.new(0.5), {BackgroundTransparency = 0.3, TextTransparency = 0.3})
+    tweentrans:Play()
+end)
+
+backwikisearch.MouseLeave:Connect(function()
+    local tweentrans = TweenService:Create(backwikisearch, TweenInfo.new(0.5), {BackgroundTransparency = 0, TextTransparency = 0})
+    tweentrans:Play()
+end)
+
 UICorner_7.CornerRadius = UDim.new(0, 5)
 UICorner_7.Parent = backwikisearch
 
@@ -1158,10 +1227,165 @@ backwikisearch.MouseLeave:Connect(function()
     tweentrans:Play()
 end)
 
+
+
+function getItemName(itemID, shiny)
+    for i,v in next, game.ReplicatedStorage.Items:GetChildren() do
+        if shiny == nil or not shiny then
+            if v:FindFirstChild("ItemId") and v.ItemId.Value == itemID then
+                return v.Name
+            end
+        elseif shiny then
+            if v:FindFirstChild("ItemId") and v.ShinyId.Value == itemID then
+                return v.Name
+            end
+        end
+    end
+end
+
+--[[
+    Transition Buttons
+--]]
+
 backwikisearch.MouseButton1Click:Connect(function()
-    transitionBack(wikisearch, game.CoreGui[guiname].Main, nil, wikisearch.Glow)
-    backwikisearch.TextTransparency = 0
-    backwikisearch.BackgroundTransparency = 0
+    print("Go back to GUI")
+    --transitionBack(wikisearch, game.CoreGui[guiname].Main, nil, wikisearch.Glow)
+    --backwikisearch.TextTransparency = 0
+    --backwikisearch.BackgroundTransparency = 0
+end)
+
+backwiki.MouseButton1Click:Connect(function() -- Upgraders
+    transitionToWikiPg(wikiframe, wikisearch, nil, wikisearchglow)
+end)
+
+backwikiMine.MouseButton1Click:Connect(function() -- Mines
+    transitionToWikiPg(wikiframeMine, wikisearch, nil, wikisearchglow)
+end)
+
+backwikiFurn.MouseButton1Click:Connect(function() -- Furnace 
+    transitionToWikiPg(wikiframeFurn, wikisearch, nil, wikisearchglow)
+end)
+
+local transfer = false
+shinywiki.MouseButton1Click:Connect(function() -- Upgraders
+    if shinywiki.Text == "Shiny" then
+        transfer = true
+        shinywiki.Text = "Normal"
+    elseif shinywiki.Text == "Normal" then
+        transfer = false
+        shinywiki.Text = "Shiny"
+    end
+    local ShinyItemName = ''
+    local ItemName = ''
+    if transfer then
+        for i,v in pairs(shinywiki.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ShinyItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ShinyItemName = getItemName(v.ShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newItem(ShinyItemName, true)
+    elseif not transfer then
+        for i,v in pairs(shinywiki.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ItemName = getItemName(v.NonShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newItem(ItemName, false)
+    end
+end)
+shinywikiFurn.MouseButton1Click:Connect(function() -- Furnaces
+    if shinywikiFurn.Text == "Shiny" then
+        transfer = true
+        shinywikiFurn.Text = "Normal"
+    elseif shinywikiFurn.Text == "Normal" then
+        transfer = false
+        shinywikiFurn.Text = "Shiny"
+    end
+    local ShinyItemName = ''
+    local ItemName = ''
+    if transfer then
+        for i,v in pairs(shinywikiFurn.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ShinyItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ShinyItemName = getItemName(v.ShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newFurn(ShinyItemName, true)
+    elseif not transfer then
+        for i,v in pairs(shinywikiFurn.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ItemName = getItemName(v.NonShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newFurn(ItemName, false)
+    end
+end)
+shinywikiMine.MouseButton1Click:Connect(function() -- Mines
+    if shinywikiMine.Text == "Shiny" then
+        transfer = true
+        shinywikiMine.Text = "Normal"
+    elseif shinywikiMine.Text == "Normal" then
+        transfer = false
+        shinywikiMine.Text = "Shiny"
+    end
+    local ShinyItemName = ''
+    local ItemName = ''
+    if transfer then
+        for i,v in pairs(shinywikiMine.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ShinyItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ShinyItemName = getItemName(v.ShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newMine(ShinyItemName, true)
+    elseif not transfer then
+        for i,v in pairs(shinywikiMine.Parent:GetChildren()) do
+            if v.Name ~= "TextButton" then
+                if v:FindFirstChild("RequiredEvo") then
+                    ItemName = getItemName(v.RequiredEvo.Value)
+                else
+                    ItemName = getItemName(v.NonShinyId.Value)
+                end
+            end
+        end
+        if _G.cam ~= nil then
+            _G.cam:Disconnect()
+        end
+        newMine(ItemName, false)
+    end
 end)
 
 local HttpService = game:GetService("HttpService")
@@ -1195,7 +1419,7 @@ function addValueLabel(name, order, text)
     valuesCon.Parent = valuestab
 end
 
-function newItem(name) 
+function newItem(name, shiny) 
     
     topbarwikitext.Text = name
     masterscroll.CanvasSize = UDim2.new(0,0,0,0)
@@ -1274,122 +1498,128 @@ function newItem(name)
     local HttpService = game:GetService("HttpService")
     local itemdata = game:HttpGet("https://raw.githubusercontent.com/VeronicVR/MHScripts/main/wiki%20reference.json")
 
-    local alldata = HttpService:JSONDecode(itemdata)
-    local rimd
-    for i,v in pairs(alldata) do
-        if i == name then
-            rimd = v
+    if shiny then 
+        print("Shiny Selected, skipping")
+    else
+        local alldata = HttpService:JSONDecode(itemdata)
+        local rimd
+        for i,v in pairs(alldata) do
+            if i == name then
+                rimd = v
+            end
         end
-    end
-    local tier = itemport.Tier.Value
-    tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
-    tierlabel.Text = tier
-    sfeffects.Size = UDim2.new(0,214,0,102)
-    sfdrawbacks.Size = UDim2.new(0,214,0,60)
-    sfsource.Size = UDim2.new(0,214,0,51)
-    sfupgrade.Size = UDim2.new(0,214,0,51)
-    effectsTxt.Text = rimd.effects
-    drawbacksTxt.Text = rimd.drawbacks
-    sfdrawbacks.Visible = true
-    drawbackstab.Visible = true
-    if rimd.drawbacks == "N/A" then
-        sfdrawbacks.Visible = false
-        drawbackstab.Visible = false
-    end
-    if itemport:FindFirstChild("RebirthRequirement") then
-        sourceTxt.Text = rimd.source .. " (Life " .. itemport.RebirthRequirement.Value .."+)"
-    elseif itemport:FindFirstChild("UnlockAt") then
-        sourceTxt.Text = rimd.source .. " (Life " .. itemport.UnlockAt.Value .."+)"
-    else   
-        sourceTxt.Text = rimd.source
-    end
-    if itemport:FindFirstChild("EnchantCost") then
-        for i,v in pairs(itemport.EnchantCost:GetChildren()) do
-            if tonumber(v.Name) ~= nil then
-                for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-                    if r.ItemId.Value == tonumber(v.Name) then
-                        sourceTxt.Text = sourceTxt.Text .. "x" .. v.Value .. " " .. r.Name
+        local tier = itemport.Tier.Value
+        tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
+        tierlabel.Text = tier
+        sfeffects.Size = UDim2.new(0,214,0,102)
+        sfdrawbacks.Size = UDim2.new(0,214,0,60)
+        sfsource.Size = UDim2.new(0,214,0,51)
+        sfupgrade.Size = UDim2.new(0,214,0,51)
+        if rimd.effects ~= nil then 
+            effectsTxt.Text = rimd.effects
+        end
+        drawbacksTxt.Text = rimd.drawbacks
+        sfdrawbacks.Visible = true
+        drawbackstab.Visible = true
+        if rimd.drawbacks == "N/A" then
+            sfdrawbacks.Visible = false
+            drawbackstab.Visible = false
+        end
+        if itemport:FindFirstChild("RebirthRequirement") then
+            sourceTxt.Text = rimd.source .. " (Life " .. itemport.RebirthRequirement.Value .."+)"
+        elseif itemport:FindFirstChild("UnlockAt") then
+            sourceTxt.Text = rimd.source .. " (Life " .. itemport.UnlockAt.Value .."+)"
+        else   
+            sourceTxt.Text = rimd.source
+        end
+        if itemport:FindFirstChild("EnchantCost") then
+            for i,v in pairs(itemport.EnchantCost:GetChildren()) do
+                if tonumber(v.Name) ~= nil then
+                    for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                        if r.ItemId.Value == tonumber(v.Name) then
+                            sourceTxt.Text = sourceTxt.Text .. "x" .. v.Value .. " " .. r.Name
+                        end
+                    end
+                elseif v.Name == "Shards" then
+                    sourceTxt.Text = sourceTxt.Text .. v.Value .. " Shards"
+                end
+
+                if i ~= #itemport.EnchantCost:GetChildren() then
+                    sourceTxt.Text = sourceTxt.Text .. "\n"
+                end
+            end
+        end
+        if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
+            for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                if v:FindFirstChild("RequiredEvo") then
+                    if v.RequiredEvo.Value == itemport.ItemId.Value then
+                        local evoshiny = Instance.new("IntValue")
+                        evoshiny.Parent = itemport
+                        evoshiny.Value = v.ItemId.Value
+                        evoshiny.Name = "ShinyId"
                     end
                 end
-            elseif v.Name == "Shards" then
-                sourceTxt.Text = sourceTxt.Text .. v.Value .. " Shards"
-            end
-
-            if i ~= #itemport.EnchantCost:GetChildren() then
-                sourceTxt.Text = sourceTxt.Text .. "\n"
             end
         end
-    end
-    if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
-        for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-            if v:FindFirstChild("RequiredEvo") then
-                if v.RequiredEvo.Value == itemport.ItemId.Value then
-                    local evoshiny = Instance.new("IntValue")
-                    evoshiny.Parent = itemport
-                    evoshiny.Value = v.ItemId.Value
-                    evoshiny.Name = "ShinyId"
-                end
+        if tier == "Reborn" or tier == "Adv. Reborn" then
+            sourceTxt.Text = rimd.source .. " (Life " .. itemport.ReqLife.Value .."+)"
+            addValueLabel("Rarity", 0, "Rarity: " .. itemport.RebornChance.Value)
+            if itemport:FindFirstChild("ShardSalvagePrice") then
+                addValueLabel("Salvage", 0, "Salvage Yield: " .. itemport.ShardSalvagePrice.Value)
+            end
+            if itemport:FindFirstChild("RebornShopPrice") then
+                addValueLabel("rebshop", 0, "Craftsman Cost: " .. itemport.RebornShopPrice.Value)
             end
         end
-    end
-    if tier == "Reborn" or tier == "Adv. Reborn" then
-        sourceTxt.Text = rimd.source .. " (Life " .. itemport.ReqLife.Value .."+)"
-        addValueLabel("Rarity", 0, "Rarity: " .. itemport.RebornChance.Value)
-        if itemport:FindFirstChild("ShardSalvagePrice") then
-            addValueLabel("Salvage", 0, "Salvage Yield: " .. itemport.ShardSalvagePrice.Value)
+        upgradeTxt.Text = rimd.limit
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+            addValueLabel("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemport.Cost.Value))
         end
-        if itemport:FindFirstChild("RebornShopPrice") then
-            addValueLabel("rebshop", 0, "Craftsman Cost: " .. itemport.RebornShopPrice.Value)
+        if tier == "Refined" or tier == "Premium" then
+            if itemport:FindFirstChild("Crystals") then
+            addValueLabel("Cost", 0, "Cost: " .. itemport.Crystals.Value .."uC")
+            end
         end
-    end
-    upgradeTxt.Text = rimd.limit
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-        addValueLabel("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemport.Cost.Value))
-    end
-    if tier == "Refined" or tier == "Premium" then
-        if itemport:FindFirstChild("Crystals") then
-        addValueLabel("Cost", 0, "Cost: " .. itemport.Crystals.Value .."uC")
+        if itemport:FindFirstChild("BlueprintPrice") then
+            addValueLabel("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemport.BlueprintPrice.Value), "%$", "") .. " RP")
         end
-    end
-    if itemport:FindFirstChild("BlueprintPrice") then
-        addValueLabel("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemport.BlueprintPrice.Value), "%$", "") .. " RP")
-    end
-    if tier == "Contraband" then
-        addValueLabel("Cost", 0, rimd.cost)
-    end
-    addValueLabel("RebProof", 1, rimd.reb)
-    addValueLabel("SacbProof", 2, rimd.sac)
-    addValueLabel("ItemId", 3, "Item Id: " .. itemport.ItemId.Value)
-    if itemport:FindFirstChild("ShinyId") then
-        addValueLabel("ShinyId", 3, "Shiny Id: " .. itemport.ShinyId.Value)
-    end
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-    addValueLabel("RP Required", 7, "RP Required: " .. string.gsub(MoneyLib.HandleMoney(itemport.ReqPoints.Value), "%$", ""))
-    end
-    local oneconv = false
-    for i,v in pairs(itemport:GetDescendants()) do
-        if v.Name == "ConveyorSpeed" and oneconv == false then
-            oneconv = true
-            addValueLabel("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+        if tier == "Contraband" then
+            addValueLabel("Cost", 0, rimd.cost)
         end
+        addValueLabel("RebProof", 1, rimd.reb)
+        addValueLabel("SacbProof", 2, rimd.sac)
+        addValueLabel("ItemId", 3, "Item Id: " .. itemport.ItemId.Value)
+        if itemport:FindFirstChild("ShinyId") then
+            addValueLabel("ShinyId", 3, "Shiny Id: " .. itemport.ShinyId.Value)
+        end
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+        addValueLabel("RP Required", 7, "RP Required: " .. string.gsub(MoneyLib.HandleMoney(itemport.ReqPoints.Value), "%$", ""))
+        end
+        local oneconv = false
+        for i,v in pairs(itemport:GetDescendants()) do
+            if v.Name == "ConveyorSpeed" and oneconv == false then
+                oneconv = true
+                addValueLabel("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+            end
+        end
+        shinywiki.Visible = false
+        if itemport:FindFirstChild("ShinyId") then
+            shinywiki.Visible = true
+        end
+        if drawbacksTxt.AbsoluteSize.Y < 60 then
+            sfdrawbacks.Size = UDim2.new(0,sfdrawbacks.Size.X.Offset,0,drawbacksTxt.AbsoluteSize.Y+1)
+        end
+        if effectsTxt.AbsoluteSize.Y < 102 then
+            sfeffects.Size = UDim2.new(0,sfeffects.Size.X.Offset,0,effectsTxt.AbsoluteSize.Y+1)
+        end
+        if sourceTxt.AbsoluteSize.Y < 51 then
+            sfsource.Size = UDim2.new(0,sfsource.Size.X.Offset,0,sourceTxt.AbsoluteSize.Y+1)
+        end
+        if upgradeTxt.AbsoluteSize.Y < 51 then
+            sfupgrade.Size = UDim2.new(0,sfupgrade.Size.X.Offset,0,upgradeTxt.AbsoluteSize.Y+1)
+        end
+        masterscroll.CanvasSize = UDim2.new(0,0,0,masterlayout.AbsoluteContentSize.Y)
     end
-    shinywiki.Visible = false
-    if itemport:FindFirstChild("ShinyId") then
-        shinywiki.Visible = true
-    end
-    if drawbacksTxt.AbsoluteSize.Y < 60 then
-        sfdrawbacks.Size = UDim2.new(0,sfdrawbacks.Size.X.Offset,0,drawbacksTxt.AbsoluteSize.Y+1)
-    end
-    if effectsTxt.AbsoluteSize.Y < 102 then
-        sfeffects.Size = UDim2.new(0,sfeffects.Size.X.Offset,0,effectsTxt.AbsoluteSize.Y+1)
-    end
-    if sourceTxt.AbsoluteSize.Y < 51 then
-        sfsource.Size = UDim2.new(0,sfsource.Size.X.Offset,0,sourceTxt.AbsoluteSize.Y+1)
-    end
-    if upgradeTxt.AbsoluteSize.Y < 51 then
-        sfupgrade.Size = UDim2.new(0,sfupgrade.Size.X.Offset,0,upgradeTxt.AbsoluteSize.Y+1)
-    end
-    masterscroll.CanvasSize = UDim2.new(0,0,0,masterlayout.AbsoluteContentSize.Y)
 end
 
 function addValueLabelMine(name, order, text)
@@ -1414,7 +1644,7 @@ function addValueLabelMine(name, order, text)
     valuesCon.Parent = valuestab
 end
 
-function newMine(name) 
+function newMine(name, shiny) 
     topbarwikitextMine.Text = name
     masterscrollMine.CanvasSize = UDim2.new(0,0,0,0)
     local TweenService = game:GetService("TweenService")
@@ -1491,133 +1721,137 @@ function newMine(name)
     local HttpService = game:GetService("HttpService")
     local itemdata = game:HttpGet("https://raw.githubusercontent.com/VeronicVR/MHScripts/main/wiki%20reference%20mines.json")
 
-    local alldata = HttpService:JSONDecode(itemdata)
-    local rimd
-    for i,v in pairs(alldata) do
-        if i == name then
-            rimd = v
+    if shiny then 
+        print("Shiny selected, skipping")
+    else
+        local alldata = HttpService:JSONDecode(itemdata)
+        local rimd
+        for i,v in pairs(alldata) do
+            if i == name then
+                rimd = v
+            end
         end
-    end
-    local tier = itemportMine.Tier.Value
-    tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
-    tierlabelMine.Text = tier
-    sfeffectsMine.Size = UDim2.new(0,214,0,102)
-    sfdrawbacksMine.Size = UDim2.new(0,214,0,60)
-    sfsourceMine.Size = UDim2.new(0,214,0,51)
-    sforevalueMine.Size = UDim2.new(0,214,0,102)
-    sforesizeMine.Size = UDim2.new(0,214,0,102)
-    sfdroprateMine.Size = UDim2.new(0,214,0,102)
-    effectsTxtMine.Text = rimd.effects
-    drawbacksTxtMine.Text = rimd.drawbacks
-    orevalueTxtMine.Text = rimd.value
-    droprateTxtMine.Text = rimd.droprate
-    oresizeTxtMine.Text = rimd.size
-    if itemportMine:FindFirstChild("RebirthRequirement") then
-        sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.RebirthRequirement.Value .."+)"
-    elseif itemportMine:FindFirstChild("UnlockAt") then
-        sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.UnlockAt.Value .."+)"
-    else   
-        sourceTxtMine.Text = rimd.source
-    end
-    if itemportMine:FindFirstChild("EnchantCost") then
-        for i,v in pairs(itemportMine.EnchantCost:GetChildren()) do
-            if tonumber(v.Name) ~= nil then
-                for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-                    if r.ItemId.Value == tonumber(v.Name) then
-                        sourceTxtMine.Text = sourceTxtMine.Text .. "x" .. v.Value .. " " .. r.Name
+        local tier = itemportMine.Tier.Value
+        tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
+        tierlabelMine.Text = tier
+        sfeffectsMine.Size = UDim2.new(0,214,0,102)
+        sfdrawbacksMine.Size = UDim2.new(0,214,0,60)
+        sfsourceMine.Size = UDim2.new(0,214,0,51)
+        sforevalueMine.Size = UDim2.new(0,214,0,102)
+        sforesizeMine.Size = UDim2.new(0,214,0,102)
+        sfdroprateMine.Size = UDim2.new(0,214,0,102)
+        effectsTxtMine.Text = rimd.effects
+        drawbacksTxtMine.Text = rimd.drawbacks
+        orevalueTxtMine.Text = rimd.value
+        droprateTxtMine.Text = rimd.droprate
+        oresizeTxtMine.Text = rimd.size
+        if itemportMine:FindFirstChild("RebirthRequirement") then
+            sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.RebirthRequirement.Value .."+)"
+        elseif itemportMine:FindFirstChild("UnlockAt") then
+            sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.UnlockAt.Value .."+)"
+        else   
+            sourceTxtMine.Text = rimd.source
+        end
+        if itemportMine:FindFirstChild("EnchantCost") then
+            for i,v in pairs(itemportMine.EnchantCost:GetChildren()) do
+                if tonumber(v.Name) ~= nil then
+                    for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                        if r.ItemId.Value == tonumber(v.Name) then
+                            sourceTxtMine.Text = sourceTxtMine.Text .. "x" .. v.Value .. " " .. r.Name
+                        end
+                    end
+                elseif v.Name == "Shards" then
+                    sourceTxtMine.Text = sourceTxtMine.Text .. v.Value .. " Shards"
+                end
+
+                if i ~= #itemportMine.EnchantCost:GetChildren() then
+                    sourceTxtMine.Text = sourceTxtMine.Text .. "\n"
+                end
+            end
+        end
+        if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
+            for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                if v:FindFirstChild("RequiredEvo") then
+                    if v.RequiredEvo.Value == itemportMine.ItemId.Value then
+                        local evoshiny = Instance.new("IntValue")
+                        evoshiny.Parent = itemportMine
+                        evoshiny.Value = v.ItemId.Value
+                        evoshiny.Name = "ShinyId"
                     end
                 end
-            elseif v.Name == "Shards" then
-                sourceTxtMine.Text = sourceTxtMine.Text .. v.Value .. " Shards"
-            end
-
-            if i ~= #itemportMine.EnchantCost:GetChildren() then
-                sourceTxtMine.Text = sourceTxtMine.Text .. "\n"
             end
         end
-    end
-    if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
-        for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-            if v:FindFirstChild("RequiredEvo") then
-                if v.RequiredEvo.Value == itemportMine.ItemId.Value then
-                    local evoshiny = Instance.new("IntValue")
-                    evoshiny.Parent = itemportMine
-                    evoshiny.Value = v.ItemId.Value
-                    evoshiny.Name = "ShinyId"
-                end
+        if tier == "Reborn" or tier == "Adv. Reborn" then
+            sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.ReqLife.Value .."+)"
+            addValueLabelMine("Rarity", 0, "Rarity: " .. itemportMine.RebornChance.Value)
+            if itemportMine:FindFirstChild("ShardSalvagePrice") then
+                addValueLabelMine("Salvage", 0, "Salvage Yield: " .. itemportMine.ShardSalvagePrice.Value)
+            end
+            if itemportMine:FindFirstChild("RebornShopPrice") then
+                addValueLabelMine("rebshop", 0, "Craftsman Cost: " .. itemportMine.RebornShopPrice.Value)
             end
         end
-    end
-    if tier == "Reborn" or tier == "Adv. Reborn" then
-        sourceTxtMine.Text = rimd.source .. " (Life " .. itemportMine.ReqLife.Value .."+)"
-        addValueLabelMine("Rarity", 0, "Rarity: " .. itemportMine.RebornChance.Value)
-        if itemportMine:FindFirstChild("ShardSalvagePrice") then
-            addValueLabelMine("Salvage", 0, "Salvage Yield: " .. itemportMine.ShardSalvagePrice.Value)
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+            addValueLabelMine("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemportMine.Cost.Value))
         end
-        if itemportMine:FindFirstChild("RebornShopPrice") then
-            addValueLabelMine("rebshop", 0, "Craftsman Cost: " .. itemportMine.RebornShopPrice.Value)
+        if tier == "Refined" or tier == "Premium" then
+            if itemportMine:FindFirstChild("Crystals") then
+            addValueLabelMine("Cost", 0, "Cost: " .. itemportMine.Crystals.Value .."uC")
+            end
         end
-    end
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-        addValueLabelMine("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemportMine.Cost.Value))
-    end
-    if tier == "Refined" or tier == "Premium" then
-        if itemportMine:FindFirstChild("Crystals") then
-        addValueLabelMine("Cost", 0, "Cost: " .. itemportMine.Crystals.Value .."uC")
+        if itemportMine:FindFirstChild("BlueprintPrice") then
+            addValueLabelMine("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemportMine.BlueprintPrice.Value), "%$", "") .. " RP")
         end
-    end
-    if itemportMine:FindFirstChild("BlueprintPrice") then
-        addValueLabelMine("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemportMine.BlueprintPrice.Value), "%$", "") .. " RP")
-    end
-    if tier == "Contraband" then
-        addValueLabelMine("Cost", 0, rimd.cost)
-    end
-    addValueLabelMine("CellFurn",1, rimd.cell)
-    addValueLabelMine("RebProof", 1, rimd.reb)
-    addValueLabelMine("SacbProof", 2, rimd.sac)
-    addValueLabelMine("ItemId", 3, "Item Id: " .. itemportMine.ItemId.Value)
-    if itemportMine:FindFirstChild("ShinyId") then
-        addValueLabelMine("ShinyId", 3, "Shiny Id: " .. itemportMine.ShinyId.Value)
-    end
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-    addValueLabelMine("RP Required", 7, "RP Required: " .. string.gsub(MoneyLib.HandleMoney(itemportMine.ReqPoints.Value), "%$", ""))
-    end
-    local oneconv = false
-    for i,v in pairs(itemportMine:GetDescendants()) do
-        if v.Name == "ConveyorSpeed" and oneconv == false then
-            oneconv = true
-            addValueLabelMine("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+        if tier == "Contraband" then
+            addValueLabelMine("Cost", 0, rimd.cost)
         end
+        addValueLabelMine("CellFurn",1, rimd.cell)
+        addValueLabelMine("RebProof", 1, rimd.reb)
+        addValueLabelMine("SacbProof", 2, rimd.sac)
+        addValueLabelMine("ItemId", 3, "Item Id: " .. itemportMine.ItemId.Value)
+        if itemportMine:FindFirstChild("ShinyId") then
+            addValueLabelMine("ShinyId", 3, "Shiny Id: " .. itemportMine.ShinyId.Value)
+        end
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+        addValueLabelMine("RP Required", 7, "RP Required: " .. string.gsub(MoneyLib.HandleMoney(itemportMine.ReqPoints.Value), "%$", ""))
+        end
+        local oneconv = false
+        for i,v in pairs(itemportMine:GetDescendants()) do
+            if v.Name == "ConveyorSpeed" and oneconv == false then
+                oneconv = true
+                addValueLabelMine("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+            end
+        end
+        shinywikiMine.Visible = false
+        if itemportMine:FindFirstChild("ShinyId") then
+            shinywikiMine.Visible = true
+        end
+        if drawbacksTxtMine.AbsoluteSize.Y < 60 then
+            sfdrawbacksMine.Size = UDim2.new(0,sfdrawbacksMine.Size.X.Offset,0,drawbacksTxtMine.AbsoluteSize.Y+1)
+        end
+        if effectsTxtMine.AbsoluteSize.Y < 102 then
+            sfeffectsMine.Size = UDim2.new(0,sfeffectsMine.Size.X.Offset,0,effectsTxtMine.AbsoluteSize.Y+1)
+        end
+        if sourceTxtMine.AbsoluteSize.Y < 51 then
+            sfsourceMine.Size = UDim2.new(0,sfsourceMine.Size.X.Offset,0,sourceTxtMine.AbsoluteSize.Y+1)
+        end
+        sforesizeMine.Size = UDim2.new(0,sforesizeMine.Size.X.Offset,0,0)
+        sfdroprateMine.Size = UDim2.new(0,sfdroprateMine.Size.X.Offset,0,0)
+        sforevalueMine.Size = UDim2.new(0,sforevalueMine.Size.X.Offset,0,0)
+        sfeffectsMine.Visible = true
+        effectstabMine.Visible = true
+        sfdrawbacksMine.Visible = true
+        drawbackstabMine.Visible = true
+        if rimd.effects == "N/A" then
+            sfeffectsMine.Visible = false
+            effectstabMine.Visible = false
+        end
+        if rimd.drawbacks == "N/A" then
+            sfdrawbacksMine.Visible = false
+            drawbackstabMine.Visible = false
+        end
+        masterscrollMine.CanvasSize = UDim2.new(0,0,0,masterlayoutMine.AbsoluteContentSize.Y)
     end
-    shinywikiMine.Visible = false
-    if itemportMine:FindFirstChild("ShinyId") then
-        shinywikiMine.Visible = true
-    end
-    if drawbacksTxtMine.AbsoluteSize.Y < 60 then
-        sfdrawbacksMine.Size = UDim2.new(0,sfdrawbacksMine.Size.X.Offset,0,drawbacksTxtMine.AbsoluteSize.Y+1)
-    end
-    if effectsTxtMine.AbsoluteSize.Y < 102 then
-        sfeffectsMine.Size = UDim2.new(0,sfeffectsMine.Size.X.Offset,0,effectsTxtMine.AbsoluteSize.Y+1)
-    end
-    if sourceTxtMine.AbsoluteSize.Y < 51 then
-        sfsourceMine.Size = UDim2.new(0,sfsourceMine.Size.X.Offset,0,sourceTxtMine.AbsoluteSize.Y+1)
-    end
-    sforesizeMine.Size = UDim2.new(0,sforesizeMine.Size.X.Offset,0,0)
-    sfdroprateMine.Size = UDim2.new(0,sfdroprateMine.Size.X.Offset,0,0)
-    sforevalueMine.Size = UDim2.new(0,sforevalueMine.Size.X.Offset,0,0)
-    sfeffectsMine.Visible = true
-    effectstabMine.Visible = true
-    sfdrawbacksMine.Visible = true
-    drawbackstabMine.Visible = true
-    if rimd.effects == "N/A" then
-        sfeffectsMine.Visible = false
-        effectstabMine.Visible = false
-    end
-    if rimd.drawbacks == "N/A" then
-        sfdrawbacksMine.Visible = false
-        drawbackstabMine.Visible = false
-    end
-    masterscrollMine.CanvasSize = UDim2.new(0,0,0,masterlayoutMine.AbsoluteContentSize.Y)
 end
 
 function addValueLabelFurn(name, order, text)
@@ -1642,7 +1876,7 @@ function addValueLabelFurn(name, order, text)
     valuesCon.Parent = valuestab
 end
 
-function newFurn(name) 
+function newFurn(name, shiny) 
     topbarwikitextFurn.Text = name
     masterscrollFurn.CanvasSize = UDim2.new(0,0,0,0)
     local TweenService = game:GetService("TweenService")
@@ -1719,131 +1953,135 @@ function newFurn(name)
     local HttpService = game:GetService("HttpService")
     local itemdata = game:HttpGet("https://raw.githubusercontent.com/VeronicVR/MHScripts/main/wiki%20reference%20furnaces.json")
 
-    local alldata = HttpService:JSONDecode(itemdata)
-    local rimd
-    for i,v in pairs(alldata) do
-        if i == name then
-            rimd = v
+    if shiny then 
+        print("Shiny selected, skipping")
+    else
+        local alldata = HttpService:JSONDecode(itemdata)
+        local rimd
+        for i,v in pairs(alldata) do
+            if i == name then
+                rimd = v
+            end
         end
-    end
-    local tier = itemportFurn.Tier.Value
-    tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
-    tierlabelFurn.Text = tier
-    sfeffectsFurn.Size = UDim2.new(0,214,0,102)
-    sfdrawbacksFurn.Size = UDim2.new(0,214,0,60)
-    sfsourceFurn.Size = UDim2.new(0,214,0,51)
-    sfRPFurn.Size = UDim2.new(0,214,0,102)
-    effectsTxtFurn.Text = rimd.effects
-    drawbacksTxtFurn.Text = rimd.drawbacks
-    RPTxtFurn.Text = rimd.rp
-    if itemportFurn:FindFirstChild("RebirthRequirement") then
-        sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.RebirthRequirement.Value .."+)"
-    elseif itemportFurn:FindFirstChild("UnlockAt") then
-        sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.UnlockAt.Value .."+)"
-    else   
-        sourceTxtFurn.Text = rimd.source
-    end
-    if itemportFurn:FindFirstChild("EnchantCost") then
-        for i,v in pairs(itemportFurn.EnchantCost:GetChildren()) do
-            if tonumber(v.Name) ~= nil then
-                for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-                    if r.ItemId.Value == tonumber(v.Name) then
-                        sourceTxtFurn.Text = sourceTxtFurn.Text .. "x" .. v.Value .. " " .. r.Name
+        local tier = itemportFurn.Tier.Value
+        tier = game:GetService("ReplicatedStorage").Tiers[tier].TierName.Value
+        tierlabelFurn.Text = tier
+        sfeffectsFurn.Size = UDim2.new(0,214,0,102)
+        sfdrawbacksFurn.Size = UDim2.new(0,214,0,60)
+        sfsourceFurn.Size = UDim2.new(0,214,0,51)
+        sfRPFurn.Size = UDim2.new(0,214,0,102)
+        effectsTxtFurn.Text = rimd.effects
+        drawbacksTxtFurn.Text = rimd.drawbacks
+        RPTxtFurn.Text = rimd.rp
+        if itemportFurn:FindFirstChild("RebirthRequirement") then
+            sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.RebirthRequirement.Value .."+)"
+        elseif itemportFurn:FindFirstChild("UnlockAt") then
+            sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.UnlockAt.Value .."+)"
+        else   
+            sourceTxtFurn.Text = rimd.source
+        end
+        if itemportFurn:FindFirstChild("EnchantCost") then
+            for i,v in pairs(itemportFurn.EnchantCost:GetChildren()) do
+                if tonumber(v.Name) ~= nil then
+                    for o,r in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                        if r.ItemId.Value == tonumber(v.Name) then
+                            sourceTxtFurn.Text = sourceTxtFurn.Text .. "x" .. v.Value .. " " .. r.Name
+                        end
+                    end
+                elseif v.Name == "Shards" then
+                    sourceTxtFurn.Text = sourceTxtFurn.Text .. v.Value .. " Shards"
+                end
+
+                if i ~= #itemportFurn.EnchantCost:GetChildren() then
+                    sourceTxtFurn.Text = sourceTxtFurn.Text .. "\n"
+                end
+            end
+        end
+        if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
+            for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+                if v:FindFirstChild("RequiredEvo") then
+                    if v.RequiredEvo.Value == itemportFurn.ItemId.Value then
+                        local evoshiny = Instance.new("IntValue")
+                        evoshiny.Parent = itemportFurn
+                        evoshiny.Value = v.ItemId.Value
+                        evoshiny.Name = "ShinyId"
                     end
                 end
-            elseif v.Name == "Shards" then
-                sourceTxtFurn.Text = sourceTxtFurn.Text .. v.Value .. " Shards"
-            end
-
-            if i ~= #itemportFurn.EnchantCost:GetChildren() then
-                sourceTxtFurn.Text = sourceTxtFurn.Text .. "\n"
             end
         end
-    end
-    if tier == "Evolved Reborn" or tier == "Adv. Evolution" then
-        for i,v in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-            if v:FindFirstChild("RequiredEvo") then
-                if v.RequiredEvo.Value == itemportFurn.ItemId.Value then
-                    local evoshiny = Instance.new("IntValue")
-                    evoshiny.Parent = itemportFurn
-                    evoshiny.Value = v.ItemId.Value
-                    evoshiny.Name = "ShinyId"
-                end
+        if tier == "Reborn" or tier == "Adv. Reborn" then
+            sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.ReqLife.Value .."+)"
+            addValueLabelFurn("Rarity", 0, "Rarity: " .. itemportFurn.RebornChance.Value)
+            if itemportFurn:FindFirstChild("ShardSalvagePrice") then
+                addValueLabelFurn("Salvage", 0, "Salvage Yield: " .. itemportFurn.ShardSalvagePrice.Value)
+            end
+            if itemportFurn:FindFirstChild("RebornShopPrice") then
+                addValueLabelFurn("rebshop", 0, "Craftsman Cost: " .. itemportFurn.RebornShopPrice.Value)
             end
         end
-    end
-    if tier == "Reborn" or tier == "Adv. Reborn" then
-        sourceTxtFurn.Text = rimd.source .. " (Life " .. itemportFurn.ReqLife.Value .."+)"
-        addValueLabelFurn("Rarity", 0, "Rarity: " .. itemportFurn.RebornChance.Value)
-        if itemportFurn:FindFirstChild("ShardSalvagePrice") then
-            addValueLabelFurn("Salvage", 0, "Salvage Yield: " .. itemportFurn.ShardSalvagePrice.Value)
+        local testMoneyLib = require(game:GetService("ReplicatedStorage").MoneyLib)
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+            addValueLabelFurn("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemportFurn.Cost.Value))
+            --addValueLabelFurn("Cost", 0, "Cost: 0")
         end
-        if itemportFurn:FindFirstChild("RebornShopPrice") then
-            addValueLabelFurn("rebshop", 0, "Craftsman Cost: " .. itemportFurn.RebornShopPrice.Value)
+        if tier == "Refined" or tier == "Premium" then
+            if itemportFurn:FindFirstChild("Crystals") then
+            addValueLabelFurn("Cost", 0, "Cost: " .. itemportFurn.Crystals.Value .."uC")
+            end
         end
-    end
-    local testMoneyLib = require(game:GetService("ReplicatedStorage").MoneyLib)
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-        addValueLabelFurn("Cost", 0, "Cost: " .. MoneyLib.HandleMoney(itemportFurn.Cost.Value))
-        --addValueLabelFurn("Cost", 0, "Cost: 0")
-    end
-    if tier == "Refined" or tier == "Premium" then
-        if itemportFurn:FindFirstChild("Crystals") then
-        addValueLabelFurn("Cost", 0, "Cost: " .. itemportFurn.Crystals.Value .."uC")
+        if itemportFurn:FindFirstChild("BlueprintPrice") then
+            addValueLabelFurn("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemportFurn.BlueprintPrice.Value), "%$", "") .. " RP")
         end
-    end
-    if itemportFurn:FindFirstChild("BlueprintPrice") then
-        addValueLabelFurn("blueprint", 0, "Blueprint: " .. string.gsub(MoneyLib.HandleMoney(itemportFurn.BlueprintPrice.Value), "%$", "") .. " RP")
-    end
-    if tier == "Contraband" then
-        addValueLabelFurn("Cost", 0, rimd.cost)
-    end
-    addValueLabelFurn("FurnType",1, rimd.furntype)
-    addValueLabelFurn("RebProof", 1, rimd.reb)
-    addValueLabelFurn("SacbProof", 2, rimd.sac)
-    addValueLabelFurn("ItemId", 3, "Item Id: " .. itemportFurn.ItemId.Value)
-    if itemportFurn:FindFirstChild("ShinyId") then
-        addValueLabelFurn("ShinyId", 3, "Shiny Id: " .. itemportFurn.ShinyId.Value)
-    end
-    if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
-    addValueLabelFurn("RP Required", 7, "RP Required: " .. string.gsub(testMoneyLib.HandleMoney(itemportFurn.ReqPoints.Value), "%$", ""))
-    end
-    local oneconv = false
-    for i,v in pairs(itemportFurn:GetDescendants()) do
-        if v.Name == "ConveyorSpeed" and oneconv == false then
-            oneconv = true
-            addValueLabelFurn("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+        if tier == "Contraband" then
+            addValueLabelFurn("Cost", 0, rimd.cost)
         end
+        addValueLabelFurn("FurnType",1, rimd.furntype)
+        addValueLabelFurn("RebProof", 1, rimd.reb)
+        addValueLabelFurn("SacbProof", 2, rimd.sac)
+        addValueLabelFurn("ItemId", 3, "Item Id: " .. itemportFurn.ItemId.Value)
+        if itemportFurn:FindFirstChild("ShinyId") then
+            addValueLabelFurn("ShinyId", 3, "Shiny Id: " .. itemportFurn.ShinyId.Value)
+        end
+        if tier == "Common" or tier == "Uncommon" or tier == "Rare" or tier == "Super Rare" or tier == "Unique" or tier == "Epic" or tier == "Legendary" or tier == "Mythic" or tier == "Divine" or tier == "Almighty" then
+        addValueLabelFurn("RP Required", 7, "RP Required: " .. string.gsub(testMoneyLib.HandleMoney(itemportFurn.ReqPoints.Value), "%$", ""))
+        end
+        local oneconv = false
+        for i,v in pairs(itemportFurn:GetDescendants()) do
+            if v.Name == "ConveyorSpeed" and oneconv == false then
+                oneconv = true
+                addValueLabelFurn("ConvSpeed", 8, "Conveyor Speed: " .. math.round(v.Value*10) .. "%")
+            end
+        end
+        shinywikiFurn.Visible = false
+        if itemportFurn:FindFirstChild("ShinyId") then
+            shinywikiFurn.Visible = true
+        end
+        if drawbacksTxtFurn.AbsoluteSize.Y < 60 then
+            sfdrawbacksFurn.Size = UDim2.new(0,sfdrawbacksFurn.Size.X.Offset,0,drawbacksTxtFurn.AbsoluteSize.Y+1)
+        end
+        if effectsTxtFurn.AbsoluteSize.Y < 102 then
+            sfeffectsFurn.Size = UDim2.new(0,sfeffectsFurn.Size.X.Offset,0,effectsTxtFurn.AbsoluteSize.Y+1)
+        end
+        if sourceTxtFurn.AbsoluteSize.Y < 51 then
+            sfsourceFurn.Size = UDim2.new(0,sfsourceFurn.Size.X.Offset,0,sourceTxtFurn.AbsoluteSize.Y+1)
+        end
+        if RPTxtFurn.AbsoluteSize.Y < 102 then
+            sfRPFurn.Size = UDim2.new(0,sfRPFurn.Size.X.Offset,0,RPTxtFurn.AbsoluteSize.Y+1)
+        end
+        sfeffectsFurn.Visible = true
+        effectstabFurn.Visible = true
+        sfdrawbacksFurn.Visible = true
+        drawbackstabFurn.Visible = true
+        if rimd.effects == "N/A" then
+            sfeffectsFurn.Visible = false
+            effectstabFurn.Visible = false
+        end
+        if rimd.drawbacks == "N/A" then
+            sfdrawbacksFurn.Visible = false
+            drawbackstabFurn.Visible = false
+        end
+        masterscrollFurn.CanvasSize = UDim2.new(0,0,0,masterlayoutFurn.AbsoluteContentSize.Y)
     end
-    shinywikiFurn.Visible = false
-    if itemportFurn:FindFirstChild("ShinyId") then
-        shinywikiFurn.Visible = true
-    end
-    if drawbacksTxtFurn.AbsoluteSize.Y < 60 then
-        sfdrawbacksFurn.Size = UDim2.new(0,sfdrawbacksFurn.Size.X.Offset,0,drawbacksTxtFurn.AbsoluteSize.Y+1)
-    end
-    if effectsTxtFurn.AbsoluteSize.Y < 102 then
-        sfeffectsFurn.Size = UDim2.new(0,sfeffectsFurn.Size.X.Offset,0,effectsTxtFurn.AbsoluteSize.Y+1)
-    end
-    if sourceTxtFurn.AbsoluteSize.Y < 51 then
-        sfsourceFurn.Size = UDim2.new(0,sfsourceFurn.Size.X.Offset,0,sourceTxtFurn.AbsoluteSize.Y+1)
-    end
-    if RPTxtFurn.AbsoluteSize.Y < 102 then
-        sfRPFurn.Size = UDim2.new(0,sfRPFurn.Size.X.Offset,0,RPTxtFurn.AbsoluteSize.Y+1)
-    end
-    sfeffectsFurn.Visible = true
-    effectstabFurn.Visible = true
-    sfdrawbacksFurn.Visible = true
-    drawbackstabFurn.Visible = true
-    if rimd.effects == "N/A" then
-        sfeffectsFurn.Visible = false
-        effectstabFurn.Visible = false
-    end
-    if rimd.drawbacks == "N/A" then
-        sfdrawbacksFurn.Visible = false
-        drawbackstabFurn.Visible = false
-    end
-    masterscrollFurn.CanvasSize = UDim2.new(0,0,0,masterlayoutFurn.AbsoluteContentSize.Y)
 end
 
 for i,v in pairs(game.ReplicatedStorage.Tiers:GetChildren()) do
@@ -1970,13 +2208,13 @@ for i,v in pairs(game.ReplicatedStorage.Tiers:GetChildren()) do
                 end
                 if upgraderalldata[Frame.Name] ~= nil then
                     transitionToWikiPg(wikisearch, wikiframe, nil, wikiglow)
-                    newItem(Frame.Name)
+                    newItem(Frame.Name, false)
                 elseif minealldata[Frame.Name] ~= nil then
                     transitionToWikiPg(wikisearch, wikiframeMine, nil, wikiglowMine)
-                    newMine(Frame.Name)
+                    newMine(Frame.Name, false)
                 elseif furnacealldata[Frame.Name] ~= nil then
                     transitionToWikiPg(wikisearch, wikiframeFurn, nil, wikiglowFurn)
-                    newFurn(Frame.Name)
+                    newFurn(Frame.Name, false)
                 end
                 TextLabel_2.TextTransparency = 1
                 TextLabel_2.BackgroundTransparency = 1
