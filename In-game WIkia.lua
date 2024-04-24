@@ -2,6 +2,8 @@ local TweenService = game:GetService("TweenService")
 local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
+local guiname = "Ironic's Miner's Haven Ghost Client - v"..DefaultSettingsS.ScriptVersion
+local wikiguiname = "In-game Wiki"
 
 local function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
@@ -364,7 +366,6 @@ local function transitionToWikiPg(from, onto, ontosize, glowthing)
     displacementThingy = 0
     screendisp = -20
     onto.Position = from.Position - UDim2.new(0,0,0,displacementThingy)
-    onto.Visible = true
     --screenframe.Visible = true
     --screenframe.Position = from.Position - UDim2.new(0,0,0,screendisp)
     _G.followdragcrates = from:GetPropertyChangedSignal("Position"):Connect(function(value)
@@ -463,6 +464,7 @@ local function transitionToWikiPg(from, onto, ontosize, glowthing)
     local tweenprop = TweenService:Create(glowthing, TweenInfo.new(tweentime), {ImageTransparency = 0})
     tweenprop:Play()
     wait(tweentime)
+    onto.Visible = true
     from.Visible = false
     transcount = 0
     for i,v in pairs(from:GetDescendants()) do
