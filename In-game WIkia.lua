@@ -1991,7 +1991,7 @@ wikiscreenGui = Instance.new("ScreenGui")
 		--]]
 
 		backwikisearch.MouseButton1Click:Connect(function()
-		    transitionBack(wikisearch, game.CoreGui[guiname].Main, nil, wikisearch.Glow)
+		    transitionBack(wikisearch, game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsS.ScriptVersion].Main, nil, wikisearch.Glow)
 		    --backwikisearch.TextTransparency = 0
 		    --backwikisearch.BackgroundTransparency = 0
 		end)
