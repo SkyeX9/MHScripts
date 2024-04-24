@@ -1,9 +1,3 @@
--- If youre seeing this, no youre not :3 
-
--- GUI and scripting recreated by Ironica - Originally created by Slender 2 years ago
--- Now compatible with Ro-Exec/Krampus
-
-
 		wikiscreenGui = Instance.new("ScreenGui")
 		wikiscreenGui.IgnoreGuiInset = true
 		wikiscreenGui.Parent = game:GetService("CoreGui")
