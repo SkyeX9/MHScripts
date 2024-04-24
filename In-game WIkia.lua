@@ -5,8 +5,6 @@ local tweentime = 0.5
 
 local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Options.Ironic"))
 
-local guiname = "Ironic's Miner's Haven Ghost Client - v"..SettingsS.ScriptVersion
-
 local function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
     onto.Active = true
