@@ -3,7 +3,6 @@ local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
 local guiname = "Ironic's Miner's Haven Ghost Client - v"..DefaultSettingsS.ScriptVersion
-local wikiguiname = "In-game Wiki"
 
 local function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
