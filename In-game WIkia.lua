@@ -23,7 +23,6 @@ wikiframe.SliceCenter = Rect.new(4,4,296,296)
 wikiframe.BorderSizePixel = 0
 wikiframe.Parent = wikiscreenGui
 wikiframe.Name = "Upgraders"
-wikiframe.Visible = false -- SENT BACK TO FALSE
 wikiframe.Active = true
 wikiframe.Draggable = true
 
@@ -1110,7 +1109,7 @@ wikisearch.BackgroundColor3 = stringtocolor(SettingsT.Background)
 wikisearch.BorderSizePixel = 0
 wikisearch.Position = UDim2.new(0.104929581, 0, 0.278659225, 0)
 wikisearch.Size = UDim2.new(0, 671, 0, 415)
-wikisearch.Visible = true
+wikisearch.Visible = false
 wikisearch.Active = true
 wikisearch.Draggable = true
 
