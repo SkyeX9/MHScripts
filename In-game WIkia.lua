@@ -2,7 +2,10 @@ local TweenService = game:GetService("TweenService")
 local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
-local guiname = "Ironic's Miner's Haven Ghost Client - v"..DefaultSettingsS.ScriptVersion
+
+local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Options.Ironic"))
+
+local guiname = game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsS.ScriptVersion]
 
 local function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
