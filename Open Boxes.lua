@@ -1302,7 +1302,7 @@ local TweenService = game:GetService("TweenService")
 		transitionBack(Main, game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsS.ScriptVersion].Main, UDim2.new(0, 671, 0, 415), Glow)
 	end)
 
-	local CloverUsage = Client.UseClover
+	local CloverUsage = game.Players.LocalPlayer.UseClover
 	function OpenBoxes()
 		local boxesToOpen = SettingsS["Autofarm"]["Crates"]["Open Boxes"]["Boxes"]
 		
