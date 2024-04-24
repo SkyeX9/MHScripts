@@ -1989,7 +1989,7 @@ wikiscreenGui = Instance.new("ScreenGui")
 		--]]
 
 		backwikisearch.MouseButton1Click:Connect(function()
-		    transitionBack(wikisearch, CoreGui[guiname].Main, nil, wikisearch.Glow)
+		    transitionBack(wikisearch, game.CoreGui[guiname].Main, nil, wikisearch.Glow)
 		    --backwikisearch.TextTransparency = 0
 		    --backwikisearch.BackgroundTransparency = 0
 		end)
