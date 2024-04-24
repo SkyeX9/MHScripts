@@ -1,5 +1,5 @@
 local tweentime = 0.5
-function transitionTo(from, onto, ontosize, glowthing) 
+local function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
     onto.Active = true
     onto.AnchorPoint = Vector2.new(0,0)
@@ -203,7 +203,7 @@ function transitionTo(from, onto, ontosize, glowthing)
     end
 end
 
-function transitionBack(from, backto, backtosize, glowthing)
+local function transitionBack(from, backto, backtosize, glowthing)
     from.Active = false
     backto.Active = true
     backto.AnchorPoint = Vector2.new(0,0)
@@ -351,7 +351,7 @@ function transitionBack(from, backto, backtosize, glowthing)
     screenframe.Visible = false
 end
 
-function transitionToWikiPg(from, onto, ontosize, glowthing) 
+local function transitionToWikiPg(from, onto, ontosize, glowthing) 
     from.Active = false
     onto.Active = true
     onto.AnchorPoint = Vector2.new(0,0)
@@ -545,7 +545,7 @@ function transitionToWikiPg(from, onto, ontosize, glowthing)
     end
 end
 
-function transitionUnder(from, backto, backtosize, glowthing)
+local function transitionUnder(from, backto, backtosize, glowthing)
     from.Active = false
     backto.Active = true
     backto.AnchorPoint = Vector2.new(0,0)
