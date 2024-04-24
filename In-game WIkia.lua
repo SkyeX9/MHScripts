@@ -1,5 +1,6 @@
 local TweenService = game:GetService("TweenService")
-
+local RS = game:GetService("ReplicatedStorage")
+local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
 
 local function transitionTo(from, onto, ontosize, glowthing) 
