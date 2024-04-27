@@ -2,10 +2,9 @@ local TweenService = game:GetService("TweenService")
 local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
-
 local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Options.Ironic"))
 
-local function transitionTo(from, onto, ontosize, glowthing) 
+function transitionTo(from, onto, ontosize, glowthing) 
     from.Active = false
     onto.Active = true
     onto.AnchorPoint = Vector2.new(0,0)
@@ -209,7 +208,7 @@ local function transitionTo(from, onto, ontosize, glowthing)
     end)
     end
 end
-local function transitionBack(from, backto, backtosize, glowthing)
+function transitionBack(from, backto, backtosize, glowthing)
     from.Active = false
     backto.Active = true
     backto.AnchorPoint = Vector2.new(0,0)
@@ -318,9 +317,7 @@ local function transitionBack(from, backto, backtosize, glowthing)
 	
     wait(tweentime)
 
-    local UserInputService = game:GetService("UserInputService")
     repeat wait() until UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) == false
-    
     transcount = 0
     for i,v in pairs(from:GetDescendants()) do
         if v:IsA("ImageLabel") then
@@ -361,7 +358,7 @@ local function transitionBack(from, backto, backtosize, glowthing)
     _G.followdragcrates:Disconnect()
     --screenframe.Visible = false
 end
-local function transitionToWikiPg(from, onto, ontosize, glowthing) 
+function transitionToWikiPg(from, onto, ontosize, glowthing) 
     from.Active = false
     onto.Active = true
     onto.AnchorPoint = Vector2.new(0,0)
@@ -554,7 +551,7 @@ local function transitionToWikiPg(from, onto, ontosize, glowthing)
     end)
     end
 end
-local function transitionUnder(from, backto, backtosize, glowthing)
+function transitionUnder(from, backto, backtosize, glowthing)
     from.Active = false
     backto.Active = true
     backto.AnchorPoint = Vector2.new(0,0)
@@ -699,7 +696,6 @@ local function transitionUnder(from, backto, backtosize, glowthing)
     local tweenprop = TweenService:Create(glowthing, TweenInfo.new(tweentime), {ImageTransparency = 1}); tweenprop:Play()
     wait(tweentime)
     
-    local UserInputService = game:GetService("UserInputService")
     repeat wait() until UserInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) == false
     from.Visible = false
     transcount = 0
@@ -765,7 +761,7 @@ wikiscreenGui = Instance.new("ScreenGui")
 		wikiframe.BorderSizePixel = 0
 		wikiframe.Parent = wikiscreenGui
 		wikiframe.Name = "Upgraders"
-		wikiframe.Visible = false -- SENT BACK TO FALSE
+		wikiframe.Visible = false
 		wikiframe.Active = true
 		wikiframe.Draggable = true
 
@@ -3003,3 +2999,50 @@ wikiscreenGui = Instance.new("ScreenGui")
 		        end
 		    end
 		end)
+
+local DragFrames = {wikisearch, wikiframeMine, wikiframeFurn, wikiframe} -- Add all the frames you want to make draggable here
+local dragging = {}
+local dragInput = {}
+local dragStart = {}
+local startPos = {}
+local UserInputService = game:GetService("UserInputService")
+
+local function update(frame, input)
+    local delta = input.Position - dragStart[frame]
+    local dragTime = 0.04
+    local SmoothDrag = {}
+    SmoothDrag.Position = UDim2.new(startPos[frame].X.Scale, startPos[frame].X.Offset + delta.X, startPos[frame].Y.Scale, startPos[frame].Y.Offset + delta.Y)
+    local dragSmoothFunction = TweenService:Create(frame, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+    dragSmoothFunction:Play()
+end
+
+for _, frame in ipairs(DragFrames) do
+    dragging[frame] = false
+
+    frame.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging[frame] = true
+            dragStart[frame] = input.Position
+            startPos[frame] = frame.Position
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging[frame] = false
+                end
+            end)
+        end
+    end)
+
+    frame.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput[frame] = input
+        end
+    end)
+end
+
+UserInputService.InputChanged:Connect(function(input)
+    for frame, draggingState in pairs(dragging) do
+        if draggingState and dragInput[frame] == input and frame.Size then
+            update(frame, input)
+        end
+    end
+end)
