@@ -1149,7 +1149,7 @@ local selectedSalvages = {}
 	function itemhas(ID)
 		local hasamount
 		RS.FetchInventory:InvokeServer()
-		for i,v in next, Client.PlayerGui.GUI.Inventory.Frame.Items:GetChildren() do
+		for i,v in next, game.Players.LocalPlayer.PlayerGui.GUI.Inventory.Frame.Items:GetChildren() do
 			if v:IsA("TextButton") and v.Visible == true then
 				if v.ItemId.Value == ID then 
 					-- string.sub(text, 2) -- removes the first digit
