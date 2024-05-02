@@ -2453,7 +2453,7 @@
         "sac": "Sacrifice Proof: Yes"
     },
     "Carrot Farm": {
-        "effects": "Multiplies ore value by x3\n\nOres grow in size",
+        "effects": "Multiplies ore value by x3\nOres grow in size",
         "drawbacks": "Incompatible with the Ore Basket",
         "source": "Easter 2020, Easter 2021 (Mystery Boxes, Shop - 300uC)",
         "limit": "1 (Resettable)",
