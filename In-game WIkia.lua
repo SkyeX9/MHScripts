@@ -2,10 +2,11 @@ local TweenService = game:GetService("TweenService")
 local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
+local SettingsT = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Theme.Ironic"))
 local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Options.Ironic"))
 local UserInputService = game:GetService("UserInputService")
 
-local guiname = "Ironic's Miner's Haven Ghost Client - v"..DefaultSettingsS.ScriptVersion
+local guiname = "Ironic's Miner's Haven Ghost Client - v"..DefaultSettingsT.ScriptVersion
 local wikiguiname = "In-game Wiki"
 
 	local function transitionTo(from, onto, ontosize, glowthing) 
@@ -1993,7 +1994,7 @@ wikiscreenGui = Instance.new("ScreenGui")
 		--]]
 
 		backwikisearch.MouseButton1Click:Connect(function()
-		    transitionBack(wikisearch, game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsS.ScriptVersion].Main, nil, wikisearch.Glow)
+		    transitionBack(wikisearch, game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsT.ScriptVersion].Main, nil, wikisearch.Glow)
 		    --backwikisearch.TextTransparency = 0
 		    --backwikisearch.BackgroundTransparency = 0
 		end)
