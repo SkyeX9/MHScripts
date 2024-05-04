@@ -1456,7 +1456,7 @@
         "furntype": "Type: Standard",
         "reb": "Reborn Proof: Yes",
         "sac": "Sacrifice Proof: No"
-    }
+    },
     "Clover Crunch": {
         "effects": "Base multiplier of x0\n\n x1000 for every Lucky Clover you have",
         "drawbacks": "N/A",
