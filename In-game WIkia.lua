@@ -3,7 +3,7 @@ local RS = game:GetService("ReplicatedStorage")
 local MoneyLib = require(RS.MoneyLib)
 local tweentime = 0.5
 local SettingsT = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Theme.Ironic"))
-local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Options.Ironic"))
+local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/" .. game.Players.LocalPlayer.UserId .. "_Options.Ironic"))
 local SettingsV = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Version.Ironic"))
 local UserInputService = game:GetService("UserInputService")
 
