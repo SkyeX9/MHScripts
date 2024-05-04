@@ -3607,5 +3607,53 @@
         "limit": "1 (Resettable)",
         "reb": "Reborn Proof: Yes",
         "sac": "Sacrifice Proof: No"
-    }
+    },
+        "Esoteric Citadel": {
+        "effects": "Copies multiplier from the previous upgrader\n(caps at x40)",
+        "drawbacks": "Requires Hydraulics or Ore Cannon to reach upgrader",
+        "source": "Rebirth",
+        "limit": "1 (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: No"
+    },
+        "Combustion Engine": {
+        "effects": "Base Multiplier of x5<u><b>When infused with coal:</b></u>\nMultiplier increased to 9x\n\nLaunches ores forward",
+        "drawbacks": "Requires coal to get best multiplier\nDestroys all coal ore going through",
+        "source": "Rebirth",
+        "limit": "1 (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: No"
+    },
+        "Clover Schrodinger": {
+        "effects": "<u><b>??%</b></u>: x2\n<u><b>??%</b></u>: x4\n<u><b>??%</b></u>: x7, ore is given sparkles\n<u><b>??%</b></u>: + $1M, ore is turned into gold ores",
+        "drawbacks": "Requires Hydraulics or Ore Cannon to reach upgrader",
+        "source": "The Leprechaun | 1500 Golden Clovers",
+        "limit": "1 (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: Yes"
+    },
+        "Shamrock Factory": {
+        "effects": "<u><b>When fueled:</b></u> x9\n\nTurns ore into gold",
+        "drawbacks": "Requres constant gold ore to use",
+        "source": "The Leprechaun | 2500 Golden Clovers",
+        "limit": "1 (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: Yes"
+    },
+        "Carrot Village": {
+        "effects": "<u><b>Top:</b></u>\nMultiplies ore value by x6, but 9x if bottom was used first\nTurns ore into grass.\n\n<u><b>Bottom:</b></u>\nMultiplies ore value by x4\nChanges ore material to snow\nChange ore color to orange\nDecrease ore size by 0.3 studs\n\n<u><b>Both:</b></u>\nBoth beams can be used with each other for a maximum of x36 or x24 if top is used first",
+        "drawbacks": "<u><b>Top:</b></u>\nIncrease ore size by 0.3 studs\n\n<u><b>Bottom:</b></u>\nRequires platforms to show/reach\nDecreases ore size by 0.3 studs",
+        "source": "Rebirth",
+        "limit": "1 (For Each) (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: no"
+    },
+        "Ghost Vacuum": {
+        "effects": "Ores that get sucked inside the vacuum come out the side",
+        "drawbacks": "N/A",
+        "source": "The Craftsman after obtaining 'Spooky Egg' Badge",
+        "limit": "N/A",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: Yes"
+    },
 }
