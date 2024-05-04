@@ -1462,8 +1462,17 @@
         "drawbacks": "N/A",
         "rp": "N/A",
         "source": "The Leprechaun | 500 Golden Clovers",
-        "furntype": "Type: Collectible",
+        "furntype": "Type: Cell",
         "reb": "Reborn Proof: Yes",
         "sac": "Sacrifice Proof: Yes"
+    },
+    "The Black Hole": {
+        "effects": "Processes ore at x50 its value",
+        "drawbacks": "N/A",
+        "rp": "-15 / 30 seconds",
+        "source": "Shop",
+        "furntype": "Type: Standard",
+        "reb": "Reborn Proof: No",
+        "sac": "Sacrifice Proof: No"
     }
 }
