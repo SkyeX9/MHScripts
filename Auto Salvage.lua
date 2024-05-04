@@ -3,7 +3,6 @@ local RS = game:GetService("ReplicatedStorage")
 local tweentime = 0.5
 
 local SettingsT = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Theme.Ironic"))
-local SettingsS = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/" .. game.Players.LocalPlayer.UserId .. "_Options.Ironic"))
 local SettingsV = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Version.Ironic"))
 
 local guiname = "Ironic's Miner's Haven Ghost Client - v"..SettingsV.ScriptVersion
