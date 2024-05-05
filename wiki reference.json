@@ -3655,5 +3655,13 @@
         "limit": "N/A",
         "reb": "Reborn Proof: Yes",
         "sac": "Sacrifice Proof: Yes"
+    },
+        "Mineral Wheel": {
+        "effects": "Multiplies ore value by x6",
+        "drawbacks": "Upgrade beam only covers middle of the conveyor",
+        "source": "Rebirth",
+        "limit": "1 (Resettable)",
+        "reb": "Reborn Proof: Yes",
+        "sac": "Sacrifice Proof: No"
     }
 }
