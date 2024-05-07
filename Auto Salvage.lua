@@ -2,10 +2,10 @@ local TweenService = game:GetService("TweenService")
 local RS = game:GetService("ReplicatedStorage")
 local tweentime = 0.5
 
-local SettingsT = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Theme.Ironic"))
-local SettingsV = game:service'HttpService':JSONDecode(readfile("Ironic Hub/Miners Haven/Version.Ironic"))
+local SettingsT = game:service'HttpService':JSONDecode(readfile("Ako Hub/Miners Haven/Theme.Ako"))
+local SettingsV = game:service'HttpService':JSONDecode(readfile("Ako Hub/Miners Haven/Version.Ako"))
 
-local guiname = "Ironic's Miner's Haven Ghost Client - v"..SettingsV.ScriptVersion
+local guiname = "Ako's Miner's Haven Ghost Client - v"..SettingsV.ScriptVersion
 local salvageguiname = "Auto Salvage"
 
 local selectedSalvages = {}
@@ -845,7 +845,7 @@ local selectedSalvages = {}
 	end)
 
 	backsalvage.MouseButton1Click:Connect(function()
-		transitionBack(autosalvage, game.CoreGui["Ironic's Miner's Haven Ghost Client - v"..SettingsV.ScriptVersion].Main, nil, salvageglow)
+		transitionBack(autosalvage, game.CoreGui["Ako's Miner's Haven Ghost Client - v"..SettingsV.ScriptVersion].Main, nil, salvageglow)
 	end)
 
 	selectall.Name = "selectall"
